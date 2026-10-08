@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Agafiel Pistiscia Torres | Web Developer - RPL SMK Telkom Lampung</title>
+  <meta name="description"
+    content="Portofolio resmi Agafiel Pistiscia Torres, Siswa Jurusan Rekayasa Perangkat Lunak (RPL) SMK Telkom Lampung. Web Developer dengan spesialisasi pengembangan website modern, interaktif, dan responsif bertema Sea Blue.">
+  <meta name="keywords"
+    content="Agafiel Pistiscia Torres, SMK Telkom Lampung, Rekayasa Perangkat Lunak, RPL, Web Developer, Sea Blue Portfolio, Frontend Developer Lampung">
+  <meta name="author" content="Agafiel Pistiscia Torres">
+
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:title" content="Agafiel Pistiscia Torres | Web Developer - Siswa RPL SMK Telkom Lampung">
+  <meta property="og:description"
+    content="Portofolio Web Developer interaktif karya Agafiel Pistiscia Torres (SMK Telkom Lampung - RPL). Menampilkan karya proyek, keahlian, dan statistik.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2300f2fe'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-size='48' font-weight='900' fill='%23030f1e'>AT</text></svg>">
+</head>
+
+<body>
+
+  <!-- Background Ambient Glow & Oceanic Particles Canvas -->
+  <canvas id="ocean-canvas" class="ocean-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Beranda Agafiel Torres">
+        <span class="logo-box">
+          <span class="logo-code">&lt;</span>AT<span class="logo-code">/&gt;</span>
+        </span>
+        <div class="logo-text">
+          <span class="logo-name">Agafiel Torres</span>
+          <span class="logo-badge">RPL • SMK Telkom Lampung</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Menu Utama">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Beranda</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Tentang</a></li>
+          <li class="nav-item"><a href="#stats" class="nav-link">Statistik</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Proyek</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Pendidikan</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-primary">
+          <span>Hubungi Saya</span>
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </a>
+
+        <!-- Hamburger Button for Mobile -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-chip">
+            <span class="chip-dot"></span>
+            <span class="chip-text">Siswa RPL SMK Telkom Lampung • Siap Magang & PKL</span>
+          </div>
+
+          <h1 class="hero-title">
+            Halo Semuanya, Saya <br>
+            <span class="gradient-text">Agafiel Pistiscia Torres</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">Fokus: </span>
+            <span class="role-text" id="typewriter-text">Web Developer</span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-description">
+            Siswa aktif jurusan <strong>Rekayasa Perangkat Lunak (RPL)</strong> di <strong>SMK Telkom Lampung</strong>.
+            Memiliki antusiasme mendalam pada dunia pemrograman web modern, merancang interface pengguna yang estetis,
+            responsif, dan mengimplementasikan kode yang bersih serta fungsional.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>Lihat Proyek Saya</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary btn-lg">
+              <span>Biodata Lengkap</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </a>
+            <button id="btn-quick-cv" class="btn btn-outline btn-lg" aria-label="Unduh CV Agafiel">
+              <span>Unduh CV</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Koneksi Sosial:</span>
+            <div class="social-icons">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                title="GitHub Agafiel" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                title="LinkedIn Agafiel" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn"
+                title="Instagram Agafiel" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="mailto:agafiel.torres@gmail.com" class="social-btn" title="Kirim Email" aria-label="Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a href="https://wa.me/6282188889999" target="_blank" rel="noopener noreferrer" class="social-btn"
+                title="WhatsApp Agafiel" aria-label="WhatsApp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Avatar Card -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-halo"></div>
+            <div class="profile-card">
+              <div class="profile-card-inner">
+                <div class="profile-image-container">
+                  <img src="profile.jpg" alt="Agafiel Pistiscia Torres - Siswa RPL SMK Telkom Lampung"
+                    class="profile-img" id="profile-img"
+                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80';">
+                  <div class="profile-image-overlay"></div>
+                </div>
+
+                <div class="profile-info-footer">
+                  <div class="profile-name-tag">
+                    <h4>Agafiel Pistiscia Torres</h4>
+                    <p>Web Developer &bull; RPL SMK Telkom Lampung</p>
+                  </div>
+                  <span class="status-indicator" title="Status Aktif: Siap Proyek">
+                    <span class="status-pulse"></span>
+                    Aktif Belajar & Berkarya
+                  </span>
+                </div>
+              </div>
+
+              <!-- Floating Interactive Badges -->
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon">💻</div>
+                <div class="badge-content">
+                  <span class="badge-title">Jurusan RPL</span>
+                  <span class="badge-sub">SMK Telkom Lampung</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon">🌊</div>
+                <div class="badge-content">
+                  <span class="badge-title">Tema Sea Blue</span>
+                  <span class="badge-sub">Modern & Responsif</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-top-left">
+                <div class="badge-icon">⚡</div>
+                <div class="badge-content">
+                  <span class="badge-title">Tech Stack</span>
+                  <span class="badge-sub">HTML • CSS • JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Bottom Divider -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+          <path
+            d="M0,32L60,42.7C120,53,240,75,360,80C480,85,600,75,720,64C840,53,960,43,1080,48C1200,53,1320,75,1380,85.3L1440,96L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"
+            fill="var(--color-bg-alt)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- STATS COUNTER SECTION (KONTER PROYEK & PENGALAMAN SISWA) -->
+    <section id="stats" class="section stats-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">// PENCAPAIAN & STATISTIK</span>
+          <h2 class="section-title">Konter Proyek & Rekam Jejak</h2>
+          <p class="section-subtitle">Data riil perkembangan belajar dan hasil karya saya selama menempuh pendidikan di
+            kompetensi keahlian Rekayasa Perangkat Lunak (RPL) SMK Telkom Lampung.</p>
+        </div>
+
+        <div class="stats-grid">
+          <!-- Stat 1: Proyek Selesai -->
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                <polygon points="12 11 12 17 17 14"></polygon>
+              </svg>
+            </div>
+            <div class="stat-number-box">
+              <span class="stat-number" data-target="15">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <h3 class="stat-title">Proyek Web Selesai</h3>
+            <p class="stat-desc">Meliputi Web Portal, Sistem Sekolah, E-Canteen, hingga Proyek Portofolio Interaktif di
+              lab RPL.</p>
+          </div>
+
+          <!-- Stat 2: Tahun Belajar di RPL -->
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="stat-number-box">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-suffix">Thn</span>
+            </div>
+            <h3 class="stat-title">Tahun Studi RPL</h3>
+            <p class="stat-desc">Dedikasi mempelajari algoritma, logika pemrograman, dan arsitektur web di SMK Telkom
+              Lampung.</p>
+          </div>
+
+          <!-- Stat 3: Tech Stack & Tools -->
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="stat-number-box">
+              <span class="stat-number" data-target="12">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <h3 class="stat-title">Teknologi & Tools</h3>
+            <p class="stat-desc">Menguasai HTML5, CSS3, JavaScript, PHP, MySQL, Git/GitHub, Figma, hingga browser
+              DevTools.</p>
+          </div>
+
+          <!-- Stat 4: Komitmen & Kesiapan Industri -->
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="stat-number-box">
+              <span class="stat-number" data-target="100">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <h3 class="stat-title">Siap Magang & PKL</h3>
+            <p class="stat-desc">Komitmen penuh menerapkan standar industri hasil bimbingan Guru Tamu & kurikulum Telkom
+              Schools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (BIO LENGKAP SISWA RPL SMK TELKOM LAMPUNG) -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Kolom Visual About -->
+          <div class="about-visual">
+            <div class="about-card-box">
+              <div class="about-badge-top">
+                <span class="badge-icon">🎓</span>
+                <span>Data Autentik Siswa</span>
+              </div>
+              <div class="about-identity-card">
+                <div class="identity-header">
+                  <div class="identity-avatar">
+                    <img src="profile.jpg" alt="Agafiel Pistiscia Torres"
+                      onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80';">
+                  </div>
+                  <div>
+                    <h3 class="identity-name">Agafiel Pistiscia Torres</h3>
+                    <p class="identity-role">Web Developer | Siswa RPL</p>
+                  </div>
+                </div>
+
+                <div class="identity-details">
+                  <div class="detail-row">
+                    <span class="detail-label">Sekolah:</span>
+                    <span class="detail-val">SMK Telkom Lampung</span>
+                  </div>
+                  <div class="detail-row">
+                    <span class="detail-label">Jurusan:</span>
+                    <span class="detail-val">Rekayasa Perangkat Lunak (RPL)</span>
+                  </div>
+                  <div class="detail-row">
+                    <span class="detail-label">Bidang Minat:</span>
+                    <span class="detail-val">Web Development (Front-End & Full-Stack)</span>
+                  </div>
+                  <div class="detail-row">
+                    <span class="detail-label">Lokasi:</span>
+                    <span class="detail-val">Lampung, Indonesia</span>
+                  </div>
+                  <div class="detail-row">
+                    <span class="detail-label">Status Akademik:</span>
+                    <span class="detail-val highlight-cyan">Siswa Aktif SMK Telkom</span>
+                  </div>
+                </div>
+
+                <div class="identity-signature">
+                  <div class="quote-text">"Mengubah baris kode menjadi solusi nyata yang bermanfaat bagi sesama."</div>
+                  <div class="school-tag">&copy; Rekayasa Perangkat Lunak - SMK Telkom Lampung</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Deskripsi & Filosofi Belajar -->
+          <div class="about-content">
+            <span class="section-tag">// PROFIL & BIOGRAFI</span>
+            <h2 class="section-title">Semangat Berinovasi Melalui Rekayasa Perangkat Lunak</h2>
+
+            <p class="about-lead">
+              Halo! Nama saya <strong>Agafiel Pistiscia Torres</strong>, seorang siswa yang berdedikasi di jurusan
+              <strong>Rekayasa Perangkat Lunak (RPL) SMK Telkom Lampung</strong> dengan minat mendalam pada pengembangan
+              aplikasi web interaktif dan berdaya guna tinggi.
+            </p>
+
+            <p class="about-paragraph">
+              Di lingkungan SMK Telkom Lampung yang sarat dengan budaya teknologi dan kurikulum berbasis industri, saya
+              terbiasa melatih logika komputasional, memecahkan permasalahan nyata dengan algoritma, dan membangun
+              antarmuka web yang memikat pengguna. Saya memadukan estetika desain <em>Sea Blue</em> dengan kode bersih
+              (Clean Code) agar setiap proyek tidak hanya sedap dipandang, tetapi juga cepat diakses dan mudah
+              dipelihara.
+            </p>
+
+            <p class="about-paragraph">
+              Melalui program pelatihan dan workshop bersama <strong>Guru Tamu industri</strong>, saya dibimbing untuk
+              memahami standar alur kerja profesional, mulai dari perancangan kawat (wireframing), pemodelan basis data
+              terstruktur, version control menggunakan Git, hingga pengujian fungsionalitas aplikasi.
+            </p>
+
+            <!-- 4 Nilai Utama -->
+            <div class="values-grid">
+              <div class="value-item">
+                <div class="value-icon">💻</div>
+                <div class="value-text">
+                  <h4>Kode Bersih & Semantik</h4>
+                  <p>Menulis HTML5, CSS3, dan JS murni yang rapi, modular, dan sesuai standar web accessibility.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon">🌊</div>
+                <div class="value-text">
+                  <h4>Desain Estetis Sea Blue</h4>
+                  <p>Menciptakan nuansa visual ocean tech yang menyejukkan mata, modern, dan bernuansa futuristik.</p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon">⚡</div>
+                <div class="value-text">
+                  <h4>Cepat Belajar & Adaptif</h4>
+                  <p>Antusias mengeksplorasi teknologi baru dan tanggap terhadap masukan mentor serta guru pembimbing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value-item">
+                <div class="value-icon">🤝</div>
+                <div class="value-text">
+                  <h4>Kolaborasi Tim RPL</h4>
+                  <p>Terbiasa bekerja dalam tim pengembang perangkat lunak, berdiskusi ide, dan membagi tugas secara
+                    efektif.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol Aksi -->
+            <div class="about-actions">
+              <a href="#skills" class="btn btn-primary">
+                <span>Eksplorasi Keahlian Saya</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#education" class="btn btn-secondary">
+                <span>Riwayat Pendidikan & Aktivitas</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION (KEAHLIAN & TECH STACK) -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">// TECH STACK & KEMAMPUAN</span>
+          <h2 class="section-title">Keahlian & Penguasaan Teknologi</h2>
+          <p class="section-subtitle">Kombinasi teknologi yang telah saya pelajari dan praktikkan secara intensif dalam
+            kurikulum RPL SMK Telkom Lampung dan proyek mandiri.</p>
+        </div>
+
+        <!-- Filter Tabs Keahlian -->
+        <div class="skills-filter">
+          <button class="skill-tab active" data-filter="all">Semua Teknologi</button>
+          <button class="skill-tab" data-filter="frontend">Front-End</button>
+          <button class="skill-tab" data-filter="backend">Backend & Basis Data</button>
+          <button class="skill-tab" data-filter="tools">Tools & Workflow</button>
+        </div>
+
+        <!-- Grid Kartu Keahlian -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skill 1 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-header">
+              <div class="skill-icon-box html-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>HTML5 Murni</h3>
+                <span class="skill-badge">Struktur & SEO</span>
+              </div>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 95%;"></div>
+            </div>
+            <p class="skill-desc">Penguasaan semantik HTML5, aksesibilitas (a11y), SEO on-page, dan tata letak dokumen
+              standar industri.</p>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-header">
+              <div class="skill-icon-box css-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m4.93 4.93 4.24 4.24"></path>
+                  <path d="m14.83 9.17 4.24-4.24"></path>
+                  <path d="m14.83 14.83 4.24 4.24"></path>
+                  <path d="m9.17 14.83-4.24 4.24"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>CSS3 & Sea-Blue Design</h3>
+                <span class="skill-badge">Styling & Animasi</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 90%;"></div>
+            </div>
+            <p class="skill-desc">Flexbox, CSS Grid, Glassmorphism, CSS Variables, Responsive Design, dan animasi
+              transisi halus.</p>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-header">
+              <div class="skill-icon-box js-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>JavaScript ES6+ Murni</h3>
+                <span class="skill-badge">Logika & Interaktivitas</span>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 88%;"></div>
+            </div>
+            <p class="skill-desc">DOM Manipulation, Event Handling, Async/Await, Fetch API, LocalStorage, dan Canvas API
+              tanpa library luar.</p>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-header">
+              <div class="skill-icon-box php-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 17l6-6-6-6"></path>
+                  <path d="M12 19h8"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>PHP Dasar & Web Server</h3>
+                <span class="skill-badge">Backend RPL</span>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 80%;"></div>
+            </div>
+            <p class="skill-desc">Pemrosesan form web, sesi login, penanganan request HTTP, dan logika bisnis aplikasi
+              berbasis PHP.</p>
+          </div>
+
+          <!-- Skill 5 -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-header">
+              <div class="skill-icon-box db-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>MySQL Database</h3>
+                <span class="skill-badge">Basis Data Relasional</span>
+              </div>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 82%;"></div>
+            </div>
+            <p class="skill-desc">Perancangan ERD, sintaks SQL (CRUD, JOIN, Index), normalisasi tabel, dan integrasi
+              data dengan web app.</p>
+          </div>
+
+          <!-- Skill 6 -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-header">
+              <div class="skill-icon-box git-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="6" y1="3" x2="6" y2="15"></line>
+                  <circle cx="18" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M18 9a9 9 0 0 1-9 9"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>Git & GitHub</h3>
+                <span class="skill-badge">Version Control</span>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">Manajemen repositori kode, branching, commit bersih, kolaborasi tugas kejuruan, dan
+              hosting Vercel/GitHub Pages.</p>
+          </div>
+
+          <!-- Skill 7 -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-header">
+              <div class="skill-icon-box figma-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                  <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                  <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                  <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                  <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>Figma UI/UX & Desain</h3>
+                <span class="skill-badge">Prototipe Antarmuka</span>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 80%;"></div>
+            </div>
+            <p class="skill-desc">Perancangan kawat (wireframing), pemilihan palet warna Sea Blue, tata letak tipografi,
+              dan prototipe interaktif.</p>
+          </div>
+
+          <!-- Skill 8 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-header">
+              <div class="skill-icon-box resp-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>Desain Web Responsif</h3>
+                <span class="skill-badge">Mobile & Desktop</span>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 92%;"></div>
+            </div>
+            <p class="skill-desc">Membangun tampilan web yang fleksibel dan optimal di layar smartphone, tablet, laptop,
+              hingga monitor besar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (SHOWCASE KARYA SISWA RPL SMK TELKOM LAMPUNG) -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">// PORTOFOLIO & KARYA NYATA</span>
+          <h2 class="section-title">Showcase Proyek Siswa RPL</h2>
+          <p class="section-subtitle">Daftar aplikasi dan proyek web yang saya kembangkan sebagai siswa Rekayasa
+            Perangkat Lunak SMK Telkom Lampung untuk keperluan sekolah, tugas kejuruan, dan eksplorasi mandiri.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="projects-filter">
+          <button class="project-tab active" data-filter="all">Semua Proyek (6)</button>
+          <button class="project-tab" data-filter="school">Sistem Sekolah</button>
+          <button class="project-tab" data-filter="webapp">Aplikasi Web</button>
+          <button class="project-tab" data-filter="frontend">Front-End & UI</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: Portal SMK Telkom Lampung -->
+          <article class="project-card" data-category="school" data-id="portal-telkom">
+            <div class="project-media">
+              <div class="project-thumbnail school-bg">
+                <div class="thumb-badge">🏫 SMK Telkom Lampung</div>
+                <div class="thumb-code-preview">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <div class="preview-mockup">
+                    <div class="mockup-bar">smktelkom-lpg.sch.id/portal</div>
+                    <div class="mockup-screen">
+                      <div class="mockup-hero-block"></div>
+                      <div class="mockup-cards-row">
+                        <span></span><span></span><span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary btn-open-modal" data-target="portal-telkom">Lihat Detail
+                  Lengkap</button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Sistem Sekolah</span>
+                <span class="project-date">2024</span>
+              </div>
+              <h3 class="project-title">Telkom Smart School Portal</h3>
+              <p class="project-summary">Portal akademik digital SMK Telkom Lampung untuk akses informasi kejuruan,
+                jadwal guru tamu industri, dan arsip materi pembelajaran siswa RPL.</p>
+
+              <div class="project-tags">
+                <span class="tech-tag">HTML5 Semantik</span>
+                <span class="tech-tag">CSS3 Grid</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">PHP Basic</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn-text btn-open-modal" data-target="portal-telkom">
+                  <span>Pelajari Fitur</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <div class="project-status">Selesai &bull; Versi 1.2</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: E-Canteen RPL -->
+          <article class="project-card" data-category="webapp" data-id="e-canteen">
+            <div class="project-media">
+              <div class="project-thumbnail canteen-bg">
+                <div class="thumb-badge">🍱 Kantin Digital</div>
+                <div class="thumb-code-preview">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <div class="preview-mockup">
+                    <div class="mockup-bar">kantin.rpl-telkom.local</div>
+                    <div class="mockup-screen">
+                      <div class="mockup-cart-row">
+                        <div class="mockup-item"></div>
+                        <div class="mockup-price"></div>
+                      </div>
+                      <div class="mockup-total-badge"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary btn-open-modal" data-target="e-canteen">Lihat Detail
+                  Lengkap</button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Aplikasi Web</span>
+                <span class="project-date">2024</span>
+              </div>
+              <h3 class="project-title">Kantin Digital RPL (E-Canteen)</h3>
+              <p class="project-summary">Aplikasi kasir web dan pre-order makanan kantin sekolah SMK Telkom Lampung
+                untuk mengurangi antrean padat saat jam istirahat dengan kalkulasi harga otomatis.</p>
+
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">LocalStorage API</span>
+                <span class="tech-tag">CSS Flexbox</span>
+                <span class="tech-tag">Modal Cart</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn-text btn-open-modal" data-target="e-canteen">
+                  <span>Pelajari Fitur</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <div class="project-status">Selesai &bull; Siap Pakai</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: PerpusLink Digital Library -->
+          <article class="project-card" data-category="school" data-id="perpus-link">
+            <div class="project-media">
+              <div class="project-thumbnail perpus-bg">
+                <div class="thumb-badge">📚 E-Library RPL</div>
+                <div class="thumb-code-preview">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <div class="preview-mockup">
+                    <div class="mockup-bar">perpuslink.rpl.sch.id</div>
+                    <div class="mockup-screen">
+                      <div class="mockup-search-input"></div>
+                      <div class="mockup-books-grid">
+                        <span></span><span></span><span></span><span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary btn-open-modal" data-target="perpus-link">Lihat Detail
+                  Lengkap</button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Sistem Sekolah</span>
+                <span class="project-date">2024</span>
+              </div>
+              <h3 class="project-title">PerpusLink - E-Library Digital RPL</h3>
+              <p class="project-summary">Katalog digital buku pemrograman, e-book kejuruan, dan sistem reservasi
+                peminjaman modul praktikum di laboratorium software SMK Telkom Lampung.</p>
+
+              <div class="project-tags">
+                <span class="tech-tag">HTML5 & CSS3</span>
+                <span class="tech-tag">Filter Search JS</span>
+                <span class="tech-tag">MySQL Relasional</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn-text btn-open-modal" data-target="perpus-link">
+                  <span>Pelajari Fitur</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <div class="project-status">Selesai &bull; Versi 2.0</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: EduTrack Jurnal PKL -->
+          <article class="project-card" data-category="webapp" data-id="edutrack">
+            <div class="project-media">
+              <div class="project-thumbnail edutrack-bg">
+                <div class="thumb-badge">📋 Monitoring PKL</div>
+                <div class="thumb-code-preview">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <div class="preview-mockup">
+                    <div class="mockup-bar">edutrack.smktelkom.id</div>
+                    <div class="mockup-screen">
+                      <div class="mockup-logbook-list">
+                        <div class="mockup-log-item"></div>
+                        <div class="mockup-log-item"></div>
+                      </div>
+                      <div class="mockup-status-stamp">TERVERIFIKASI</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary btn-open-modal" data-target="edutrack">Lihat Detail
+                  Lengkap</button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Aplikasi Web</span>
+                <span class="project-date">2025</span>
+              </div>
+              <h3 class="project-title">EduTrack - Jurnal Monitoring PKL</h3>
+              <p class="project-summary">Aplikasi pencatatan logbook harian Praktik Kerja Lapangan (PKL) siswa jurusan
+                RPL, lengkap dengan unggah bukti kerja dan persetujuan guru pembimbing.</p>
+
+              <div class="project-tags">
+                <span class="tech-tag">Form Validation JS</span>
+                <span class="tech-tag">PHP CRUD</span>
+                <span class="tech-tag">CSS Dashboard</span>
+                <span class="tech-tag">Export PDF</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn-text btn-open-modal" data-target="edutrack">
+                  <span>Pelajari Fitur</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <div class="project-status">Selesai &bull; Modul Lengkap</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: TechNova RPL Day Landing Page -->
+          <article class="project-card" data-category="frontend" data-id="technova">
+            <div class="project-media">
+              <div class="project-thumbnail technova-bg">
+                <div class="thumb-badge">🚀 Event RPL Day</div>
+                <div class="thumb-code-preview">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <div class="preview-mockup">
+                    <div class="mockup-bar">rplday.technova.id</div>
+                    <div class="mockup-screen">
+                      <div class="mockup-event-header"></div>
+                      <div class="mockup-countdown-row">
+                        <span></span><span></span><span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary btn-open-modal" data-target="technova">Lihat Detail
+                  Lengkap</button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Front-End & UI</span>
+                <span class="project-date">2025</span>
+              </div>
+              <h3 class="project-title">TechNova - RPL Day Showcase</h3>
+              <p class="project-summary">Landing page interaktif kompetisi coding dan pameran karya kejuruan RPL SMK
+                Telkom Lampung dengan hitung mundur event dan registrasi peserta online.</p>
+
+              <div class="project-tags">
+                <span class="tech-tag">Countdown Timer JS</span>
+                <span class="tech-tag">Keyframe Animations</span>
+                <span class="tech-tag">Sea Blue Palette</span>
+                <span class="tech-tag">Clean HTML5</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn-text btn-open-modal" data-target="technova">
+                  <span>Pelajari Fitur</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <div class="project-status">Aktif &bull; Responsif</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Agafiel Sea-Blue Personal Portfolio -->
+          <article class="project-card" data-category="frontend" data-id="sea-blue-porto">
+            <div class="project-media">
+              <div class="project-thumbnail seablue-bg">
+                <div class="thumb-badge">🌊 Sea Blue Portfolio</div>
+                <div class="thumb-code-preview">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <div class="preview-mockup">
+                    <div class="mockup-bar">agafiel.torres-porto.app</div>
+                    <div class="mockup-screen">
+                      <div class="mockup-wave-glow"></div>
+                      <div class="mockup-stats-bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary btn-open-modal" data-target="sea-blue-porto">Lihat Detail
+                  Lengkap</button>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category">Front-End & UI</span>
+                <span class="project-date">2026</span>
+              </div>
+              <h3 class="project-title">Agafiel Personal Sea Blue Portfolio</h3>
+              <p class="project-summary">Web portofolio ini dibangun dengan arsitektur murni 3 file (index.html,
+                style.css, script.js) menghadirkan nuansa laut estetik, konter interaktif, dan performa super kencang.
+              </p>
+
+              <div class="project-tags">
+                <span class="tech-tag">Canvas Particles</span>
+                <span class="tech-tag">Vanilla JavaScript</span>
+                <span class="tech-tag">Modern CSS3</span>
+                <span class="tech-tag">3 File Murni</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn-text btn-open-modal" data-target="sea-blue-porto">
+                  <span>Pelajari Fitur</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+                <div class="project-status">Rilis &bull; 100% Data Saya</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & TIMELINE SECTION -->
+    <section id="education" class="section timeline-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">// RIWAYAT & JEJAK LANGKAH</span>
+          <h2 class="section-title">Pendidikan & Pengalaman Kejuruan</h2>
+          <p class="section-subtitle">Perjalanan akademik, program pelatihan bersama Guru Tamu, dan komitmen kejuruan di
+            SMK Telkom Lampung.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-date-chip">2023 &mdash; Sekarang</div>
+              <h3 class="timeline-title">SMK Telkom Lampung &bull; Rekayasa Perangkat Lunak</h3>
+              <h4 class="timeline-subtitle">Siswa Aktif Jurusan RPL</h4>
+              <p class="timeline-desc">
+                Mendalami fondasi rekayasa perangkat lunak, algoritma pemrograman, database relasional (MySQL),
+                pembuatan antarmuka web modern (HTML, CSS, JS), dan arsitektur aplikasi berbasis web di lingkungan
+                Telkom Schools.
+              </p>
+              <div class="timeline-tags">
+                <span>Algoritma Pemrograman</span>
+                <span>Web Development</span>
+                <span>Praktik Laboratorium</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-date-chip">2024 &mdash; 2025</div>
+              <h3 class="timeline-title">Workshop & Kelas Industri Guru Tamu</h3>
+              <h4 class="timeline-subtitle">Pelatihan Profesional Industri Web</h4>
+              <p class="timeline-desc">
+                Mengikuti bimbingan intensif dari praktisi industri teknologi (Guru Tamu) mengenai standar pembuatan web
+                portofolio profesional bertema Sea Blue, clean architecture, best practices penulisan JavaScript, dan
+                persiapan etos kerja digital.
+              </p>
+              <div class="timeline-tags">
+                <span>Standar Industri</span>
+                <span>Sea Blue Design System</span>
+                <span>Kesiapan Kerja</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-date-chip">2024</div>
+              <h3 class="timeline-title">Project Lead Tugas Kelompok RPL Telkom</h3>
+              <h4 class="timeline-subtitle">Pengembangan Aplikasi Sekolah</h4>
+              <p class="timeline-desc">
+                Memimpin tim dalam merancang antarmuka dan logika front-end untuk sistem informasi sekolah dan
+                perpustakaan digital kejuruan, mengoordinasikan pembagian tugas dan integrasi kode melalui Git/GitHub.
+              </p>
+              <div class="timeline-tags">
+                <span>Team Collaboration</span>
+                <span>Git Versioning</span>
+                <span>Front-End Lead</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-date-chip">Masa Depan &mdash; Target</div>
+              <h3 class="timeline-title">Praktik Kerja Lapangan (PKL) & Sertifikasi Keahlian</h3>
+              <h4 class="timeline-subtitle">Kesiapan Berkarir di Industri IT</h4>
+              <p class="timeline-desc">
+                Bersiap untuk mengaplikasikan kemampuan web development dalam program magang industri nyata (PKL) serta
+                menuntaskan uji kompetensi keahlian Rekayasa Perangkat Lunak berstandar nasional dan industri.
+              </p>
+              <div class="timeline-tags">
+                <span>Magang PKL Industri</span>
+                <span>Uji Kompetensi RPL</span>
+                <span>Junior Web Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL / APRESIASI SECTION -->
+    <section class="section testimonial-section">
+      <div class="container">
+        <div class="testimonial-card">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-quote">
+            "Agafiel Pistiscia Torres adalah siswa jurusan RPL SMK Telkom Lampung yang memiliki ketekunan luar biasa
+            dalam mengulik kode web. Ia mampu menerjemahkan konsep visual Sea Blue modern menjadi antarmuka yang
+            responsif, rapi, dan fungsional."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <span>RPL</span>
+            </div>
+            <div class="author-info">
+              <h4>Tim Pembimbing Kejuruan RPL</h4>
+              <p>SMK Telkom Lampung &bull; Program Guru Tamu Industri</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">// MARI BERDISKUSI</span>
+          <h2 class="section-title">Hubungi Agafiel Pistiscia Torres</h2>
+          <p class="section-subtitle">Terbuka untuk diskusi proyek web, tawaran magang / PKL industri, kolaborasi
+            koding, maupun sekadar bertukar wawasan seputar teknologi.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Kontak -->
+          <div class="contact-info">
+            <div class="contact-card">
+              <h3 class="contact-card-title">Saluran Komunikasi Langsung</h3>
+              <p class="contact-card-desc">Jangan ragu untuk mengirimkan pesan. Saya akan berusaha membalas secepat
+                mungkin.</p>
+
+              <div class="contact-methods">
+                <!-- Method 1: Email -->
+                <div class="method-item">
+                  <div class="method-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="method-content">
+                    <span class="method-title">Email Resmi</span>
+                    <a href="mailto:agafiel.torres@gmail.com" class="method-value"
+                      id="email-address">agafiel.torres@gmail.com</a>
+                  </div>
+                  <button class="btn-copy" id="btn-copy-email" title="Salin Alamat Email" aria-label="Salin Email">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Method 2: WhatsApp -->
+                <div class="method-item">
+                  <div class="method-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="method-content">
+                    <span class="method-title">WhatsApp</span>
+                    <a href="https://wa.me/6282188889999" target="_blank" rel="noopener noreferrer"
+                      class="method-value">+62 821-8888-9999</a>
+                  </div>
+                </div>
+
+                <!-- Method 3: Sekolah -->
+                <div class="method-item">
+                  <div class="method-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="method-content">
+                    <span class="method-title">Institusi & Lokasi</span>
+                    <span class="method-value">SMK Telkom Lampung, Pringsewu &bull; Indonesia</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Status Magang Box -->
+              <div class="internship-status-box">
+                <div class="status-box-header">
+                  <span class="pulse-green"></span>
+                  <strong>Status Ketersediaan:</strong>
+                </div>
+                <p>Terbuka untuk program <em>Praktik Kerja Lapangan (PKL)</em>, magang industri web, serta proyek
+                  website kolaboratif.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulir Kontak Interaktif -->
+          <div class="contact-form-container">
+            <div class="form-card">
+              <h3 class="form-title">Kirim Pesan Langsung</h3>
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="form-name">Nama Lengkap <span class="required">*</span></label>
+                  <input type="text" id="form-name" name="name" class="form-input"
+                    placeholder="Misal: Bapak Rizky / Guru Tamu" required>
+                  <span class="form-error" id="error-name">Mohon masukkan nama Anda.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email">Alamat Email <span class="required">*</span></label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="nama@instansi.com"
+                    required>
+                  <span class="form-error" id="error-email">Masukkan alamat email yang valid.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-subject">Subjek Pesan <span class="required">*</span></label>
+                  <input type="text" id="form-subject" name="subject" class="form-input"
+                    placeholder="Tawaran Magang PKL / Diskusi Proyek Web" required>
+                  <span class="form-error" id="error-subject">Mohon tuliskan subjek pesan.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message">Isi Pesan <span class="required">*</span></label>
+                  <textarea id="form-message" name="message" rows="5" class="form-input"
+                    placeholder="Halo Agafiel, kami tertarik dengan portofolio kamu..." required></textarea>
+                  <span class="form-error" id="error-message">Mohon tuliskan isi pesan Anda minimal 10 karakter.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">
+                  <span id="btn-submit-text">Kirim Pesan Sekarang</span>
+                  <svg id="btn-submit-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DETAIL PROYEK INTERAKTIF -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Tutup Dialog Modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-content" id="modal-content-area">
+        <!-- Konten dinamis akan diinjeksikan via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFIKASI INTERAKTIF -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <div class="toast-icon" id="toast-icon">✓</div>
+    <div class="toast-message" id="toast-message">Pemberitahuan berhasil!</div>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top" title="Kembali ke Atas" aria-label="Kembali ke Atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-box"><span class="logo-code">&lt;</span>AT<span class="logo-code">/&gt;</span></span>
+            <span class="footer-brand-name">Agafiel Pistiscia Torres</span>
+          </div>
+          <p class="footer-tagline">
+            Siswa Rekayasa Perangkat Lunak (RPL) di SMK Telkom Lampung. Berkomitmen menciptakan karya teknologi web yang
+            bersih, berestetika tinggi, dan mempermudah kehidupan manusia.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-column">
+            <h4>Navigasi</h4>
+            <ul>
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#about">Tentang Saya</a></li>
+              <li><a href="#stats">Statistik & Konter</a></li>
+              <li><a href="#skills">Keahlian RPL</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Karya & Proyek</h4>
+            <ul>
+              <li><a href="#projects">Showcase Proyek</a></li>
+              <li><a href="#education">Jejak Pendidikan</a></li>
+              <li><a href="#contact">Hubungi Saya</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">Repositori GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Institusi</h4>
+            <p class="footer-school-text">
+              <strong>SMK Telkom Lampung</strong><br>
+              Kompetensi Keahlian Rekayasa Perangkat Lunak (RPL)<br>
+              Lampung, Indonesia
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>Agafiel Pistiscia Torres</strong>. Seluruh Hak Cipta Dilindungi. Dibuat dengan struktur 3
+          file murni: HTML5, CSS3, & Vanilla JavaScript.</p>
+        <div class="footer-tech-badge">
+          <span>🌊 Sea Blue Theme</span>
+          <span>&bull;</span>
+          <span>SMK Telkom Lampung</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
